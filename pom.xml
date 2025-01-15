@@ -5,22 +5,18 @@
     <groupId>com.example</groupId>
     <artifactId>HelloWorld</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>3.5.0</version>
-            <configuration>
-                <mainClass>HelloWorld</mainClass>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
 
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>HelloWorld</mainClass> <!-- Update if using package -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
 
